@@ -1,0 +1,92 @@
+<!-- Here’s a step-by-step guide to **run your Multithreaded Chat Application in VS Code**:
+
+---
+
+### ✅ **1. Setup Java in VS Code**
+
+Make sure you have:
+
+* **Java JDK** installed (preferably JDK 17 or later)
+* **VS Code** installed
+* **Java Extension Pack** from Microsoft (includes Language Support, Debugger, Maven, etc.)
+
+> If not yet installed:
+> 🔗 [Download JDK](https://www.oracle.com/java/technologies/javase-downloads.html)
+> 🔗 [Install Java Extension Pack](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
+
+---
+
+### ✅ **2. Open the Project Folder**
+
+1. Unzip `MultithreadedChatApp.zip`
+2. Open VS Code
+3. Click on **File > Open Folder...** and select the unzipped folder.
+
+---
+
+### ✅ **3. Compile the Java Files**
+
+Open the **integrated terminal** in VS Code:
+
+* Menu: `Terminal > New Terminal`
+
+Then compile both files:
+
+```bash
+javac Server.java
+javac Client.java
+```
+
+This creates `Server.class` and `Client.class`.
+
+---
+
+### ✅ **4. Run the Server**
+
+In terminal, run:
+
+```bash
+java Server
+```
+
+You should see:
+`Server started on port 12345`
+
+---
+
+### ✅ **5. Run Clients**
+
+* Open **new terminal tabs** (use the `+` icon in the terminal area) for each client.
+* Run:
+
+```bash
+java Client
+```
+
+Each client can now type messages which will broadcast to all others.
+
+---
+
+### ✅ **6. Example Usage**
+
+* Client A types `Hello from A`
+* Client B sees: `Hello from A`
+
+---
+
+### ⚠️ Notes
+
+* Run **server first**, then clients.
+* All programs run in **the same machine (localhost)**. For LAN support, replace `"127.0.0.1"` with your local IP address.
+
+---
+
+Would you like me to convert this into a `README.md` file or add GUI features?
+
+Now both clients are connected to the same server. Try this:
+
+In Terminal 1 (Client A): type Hello from A
+
+In Terminal 2 (Client B): type Hello from B
+
+You should see both messages appearing in both clients. -->
